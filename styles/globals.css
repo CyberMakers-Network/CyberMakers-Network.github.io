@@ -51,12 +51,6 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
-  h1 {
-    font-size: 2.6rem;
-  }
-}
-
 .app {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
@@ -204,24 +198,12 @@ main {
   transform: translateY(-5px);
 }
 
-@media (max-width: 600px) {
-  .section {
-    margin-top: 4em;
-  }
-}
-
 .header {
   height: 8em;
   max-width: 1100px;
   width: 95%;
   margin: 0 auto;
   justify-content: space-between;
-}
-
-@media (max-width: 600px) {
-  .header {
-    height: 6em;
-  }
 }
 
 .nav__list {
@@ -238,30 +220,6 @@ main {
 
 .nav__theme {
   margin-top: 0.4em;
-}
-
-@media (max-width: 600px) {
-  .nav__list {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-  }
-
-  .nav__list-item {
-    margin: 0.5em 0;
-  }
-
-  .app .nav__hamburger {
-    display: flex;
-    z-index: 2;
-    margin-left: 0.8em;
-  }
 }
 
 .about {
@@ -296,13 +254,6 @@ main {
   margin-right: 1em;
 }
 
-@media (max-width: 600px) {
-  .app .about {
-    align-items: flex-start;
-    margin-top: 2em;
-  }
-}
-
 .footer {
   padding: 3em 0;
   margin-top: 4em;
@@ -315,24 +266,11 @@ main {
   color: var(--clr-fg);
 }
 
-@media (max-width: 600px) {
-  .footer {
-    padding: 2em;
-    margin-top: 3em;
-  }
-}
-
 .scroll-top {
   position: fixed;
   bottom: 2em;
   right: 4em;
   background-color: transparent;
-}
-
-@media (max-width: 900px) {
-  .scroll-top {
-    display: none;
-  }
 }
 
 .projects__grid {
@@ -396,4 +334,67 @@ main {
 
 .showNavList {
   display: flex
+}
+
+/* making site responsive using media */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    margin-top: 4em;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 6em;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav__list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .nav__list-item {
+    margin: 0.5em 0;
+  }
+
+  .app .nav__hamburger {
+    display: flex;
+    z-index: 2;
+    margin-left: 0.8em;
+  }
+}
+
+@media (max-width: 600px) {
+  .app .about {
+    align-items: flex-start;
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 2em;
+    margin-top: 3em;
+  }
+}
+
+@media (max-width: 900px) {
+  .scroll-top {
+    display: none;
+  }
 }
